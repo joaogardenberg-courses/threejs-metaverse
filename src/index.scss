@@ -1,3 +1,63 @@
+@font-face {
+  font-family: gameFont;
+  src: url('../public/fonts/Knewave-Regular.ttf');
+}
+
 body {
+  background-image: url('../public/images/landing.PNG');
+  background-position: center;
+  background-size: cover;
+  font-family: 'gameFont';
   margin: 0;
+  overflow: hidden;
+}
+
+h1,
+.button {
+  bottom: 0;
+  color: rgb(135, 206, 235);
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  position: fixed;
+  text-align: center;
+  text-shadow: -2px -2px 2px blue, 4px 4px 4px blue;
+  user-select: none;
+  width: 100%;
+}
+
+h1 {
+  pointer-events: none;
+}
+
+.coin-display {
+  color: yellow;
+  font-size: 3rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  user-select: none;
+  text-shadow: -2px -2px 2px black, 4px 4px 4px black;
+}
+
+.button {
+  background-color: rgb(82, 107, 43);
+  border: 2px solid rgb(64, 64, 64);
+  border-radius: 1em;
+  box-shadow: inset -4px -4px 4px black;
+  cursor: pointer;
+  font-family: 'gameFont';
+  font-size: 3rem;
+  left: 50%;
+  padding: 0.5em;
+  text-shadow: 2px 2px 1px red;
+  transform: translateX(-50%);
+  width: auto;
+
+  &:hover {
+    color: yellow;
+    text-shadow: -2px -2px 2px black, 4px 4px 4px black;
+  }
 }
